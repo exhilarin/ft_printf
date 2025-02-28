@@ -6,7 +6,7 @@
 /*   By: iguney <iguney@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 02:04:05 by iguney            #+#    #+#             */
-/*   Updated: 2024/11/09 19:19:56 by iguney           ###   ########.fr       */
+/*   Updated: 2024/11/09 21:43:20 by iguney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int	ft_printf(const char *str, ...)
 	{
 		if (str[i] == '%')
 		{
-			i++;
+			while (str[++i] == ' ')
+				;
 			count += ft_check_type(str[i], args);
 		}
 		else

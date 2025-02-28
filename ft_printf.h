@@ -6,7 +6,7 @@
 /*   By: iguney <iguney@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 21:50:04 by iguney            #+#    #+#             */
-/*   Updated: 2024/11/09 17:49:56 by iguney           ###   ########.fr       */
+/*   Updated: 2024/11/09 23:14:44 by iguney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdlib.h>
 # include <unistd.h>
 
 int	ft_printf(const char *str, ...);
